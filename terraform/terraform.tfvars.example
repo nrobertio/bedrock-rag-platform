@@ -1,0 +1,4 @@
+region         = "eu-central-1"
+kb_bucket_name = "my-rag-kb-CHANGE-ME-unique"
+alert_email    = "you@example.com"
+monthly_budget = 100
