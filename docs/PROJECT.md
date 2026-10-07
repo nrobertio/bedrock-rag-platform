@@ -1,6 +1,6 @@
 # Project Writeup: Bedrock RAG Platform
 
-Why this exists, how it was built, why each choice, and the benefits. Also the interview talking-track.
+Why this exists, how it was built, why each choice, and the benefits.
 
 ## 1. The problem it solves
 
@@ -33,7 +33,7 @@ The Terraform passes terraform validate; the handler is valid Python.
 - It is production-shaped, not a notebook: an API, IAM boundaries, and a cost guardrail.
 - All infrastructure is code, reproducible and reviewable.
 
-## 5. Interview talking points
+## 5. Design notes and trade-offs
 
 - Why RAG over fine-tuning: RAG grounds answers in current, private data with citations and no training cost; fine-tuning changes style or format but does not keep facts fresh.
 - What RetrieveAndGenerate does: retrieves top-k passages from the vector store and passes them as context to the model in one managed call, returning citations.
